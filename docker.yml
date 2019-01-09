@@ -4,5 +4,8 @@
   roles:
     - role: geerlingguy.pip
       pip_install_packages:
-      - name: docker
+        - name: docker
+          state: absent
+        - name: docker-compose
+          version: 1.12.0
     - role: geerlingguy.docker
