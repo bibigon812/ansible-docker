@@ -3,8 +3,4 @@
   hosts: all
   roles:
     - role: geerlingguy.pip
-      pip_install_packages:
-        - name: docker
-          state: absent
-        - name: docker-compose
     - role: geerlingguy.docker
