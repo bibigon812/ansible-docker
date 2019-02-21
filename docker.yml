@@ -1,5 +1,6 @@
 ---
 - name: install docker
+  serial: 1
   hosts: all
   roles:
     - role: geerlingguy.pip
